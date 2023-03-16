@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class corejava {
 
@@ -100,13 +102,47 @@ public class corejava {
 		}
 		System.out.println("***********");
 		
-		for (String val :z) {
+		for (String val :z)
+		{
 			System.out.println(val);
 		}
 		
-//		item is present in Arraylist
+//		item is present in ArrayList
 		
 		System.out.println( z.contains("John"));
+		
+		int[] arr21 = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+		
+		List<int[]> nameArrayList = Arrays.asList(arr21);
+		System.out.println("John");
+		
+//		 string is an object. // String literal
+		
+		String s = "This is test String";
+		String s1 = "This is test String";
+		String s4 = "Hello World";
+		
+		
+		String s2 = new String("Welcome");
+		String s3 = new String("Welcome");
+		
+//		Split Array
+		
+		String ss = "Hello World";
+		String[] splittedString = ss.split(" ");
+		System.out.println(splittedString[0]);
+		System.out.println(splittedString[1]);		
+
+		System.out.println(splittedString[1].trim());
+		
+//		Print array character wise
+		
+//		for (int x = ss.length()-1; x< ss.length(); x--)
+//		{
+//			break;
+//			System.out.println( ss.charAt(1));
+//			break;
+//		}
 		
 	}
 }
