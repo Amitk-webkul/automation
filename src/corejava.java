@@ -100,8 +100,7 @@ public class corejava {
 		}
 		System.out.println("***********");
 		
-		for (String val :z)
-		{
+		for (String val :z) {
 			System.out.println(val);
 		}
 		
