@@ -20,21 +20,25 @@ public class Locators {
 		
 		Driver.get("http://localhost/preorder/public/customer/login");
 		Driver.findElement(By.name("email")).sendKeys("amitkumar.qa532@webkul.in");
-		Driver.findElement(By.name("password")).sendKeys("demo1236");
+		Driver.findElement(By.name("password")).sendKeys("demo1233");
 		
 		Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		
 		Driver.findElement(By.xpath("//*[@id=\"home-right-bar-container\"]/div/div/div/div/div[2]/form/input[2]")).click();
 		
-//		Driver.findElement(By.xpath("/html/body/script[5]/text()")).getText();
+		Driver.findElement(By.linkText("Forgot Password?")).click();
 		
+		Driver.findElement(By.xpath("//input[@type='email']")).sendKeys("amitkumar.qa532@webkul.inn");
 		
+		Driver.findElement(By.xpath("//*[@id=\"home-right-bar-container\"]/div/div/div/div/div[2]/form/button")).click();
 		
+		System.out.println(Driver.findElement(By.xpath("//*[@id=\"home-right-bar-container\"]/div/div/div/div/div[2]/form/div[1]/span")).getText());
 		
 		System.out.println(Driver.getTitle());
 		System.out.println(Driver.getCurrentUrl());
 		
 		Driver.quit();
+		System.out.println("1 Test Case is run successful.");
 		
 	}
 
