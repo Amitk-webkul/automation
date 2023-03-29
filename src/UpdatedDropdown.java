@@ -12,6 +12,10 @@ public class UpdatedDropdown {
 		Driver.manage().window().maximize();
 		
 		Driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+//		input[id*='SeniorCitizenDiscount'] cssSelector for find attribute with regular expression
+		Driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+		Driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected();
+		
 		Driver.findElement(By.id("divpaxinfo")).click();
 		Thread.sleep(2000);
 //		Driver.findElement(By.id("hrefIncAdt")).click();
