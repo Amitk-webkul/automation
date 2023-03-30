@@ -26,6 +26,12 @@ public class dorpDown {
 //		Parent to child travel xpath
 		Driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 		
+//		 css locator .ui-state-default.ui-state-highlight
+		Driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+//		
+		Driver.findElement(By.cssSelector(".ui-state-default")).click();
+		
+		
 		
 	}
 
