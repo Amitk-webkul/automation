@@ -1,5 +1,6 @@
+
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class corejava {
@@ -113,7 +114,7 @@ public class corejava {
 		
 		int[] arr21 = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
 		
-		List<int[]> nameArrayList = Arrays.asList(arr21);
+//		List<int[]> nameArrayList = Arrays.asList(arr21);
 		System.out.println("John");
 		
 //		 string is an object. // String literal
