@@ -15,27 +15,23 @@ public class base {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
+		WebDriver Driver = new ChromeDriver();
 		// Implicit Wait
-		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		 Driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot" };
 
-		driver.manage().window().maximize();
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		Driver.manage().window().maximize();
+		Driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		Thread.sleep(3000);
-		additems(driver, itemsNeeded);
-		driver.findElement(By.cssSelector("img[alt='Cart']")).click();
-		driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+		additems(Driver, itemsNeeded);
+		Driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+		Driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
 
-		// Explicit Wait
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
-		driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
-		driver.findElement(By.cssSelector("button.promoBtn")).click();
+		Driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
+		Driver.findElement(By.cssSelector("button.promoBtn")).click();
 
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("span.promoInfo")));
-		System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
+		System.out.println(Driver.findElement(By.cssSelector("span.promoInfo")).getText());
 
 	}
 
