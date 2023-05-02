@@ -49,7 +49,7 @@ public class locator1 {
 		
 		Driver.findElement(By.className("logout-btn")).click();
 		
-		Driver.quit();
+//		Driver.quit();
 
 	}
 	
